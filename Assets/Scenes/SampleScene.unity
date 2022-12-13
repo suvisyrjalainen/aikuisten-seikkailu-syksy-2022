@@ -371,7 +371,7 @@ PrefabInstance:
     - target: {fileID: 5619985934887145615, guid: 076879464bd682945aa7cd31ae139a36, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: de2898c618ace7f4db5a06900fcf0a29, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 076879464bd682945aa7cd31ae139a36, type: 3}
 --- !u!1 &1020043140 stripped
@@ -411,6 +411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1020043141}
   speed: 20
+  mouseSpeed: 7
 --- !u!4 &1020043144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2554720417436106229, guid: 076879464bd682945aa7cd31ae139a36, type: 3}
