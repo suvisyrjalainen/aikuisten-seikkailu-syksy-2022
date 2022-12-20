@@ -5,6 +5,7 @@ using UnityEngine;
 public class kissa : MonoBehaviour
 {
 	public CharacterController controller;
+	public Animator animator;
 	
 	private float verticalSpeed = 0f;
 	private float horizontalSpeed = 0f;
@@ -35,5 +36,24 @@ public class kissa : MonoBehaviour
 		
 		//tämä lopulta liikuttaa
 		controller.Move(direction * Time.deltaTime * speed);
+		
+		//animaatiot
+		if(verticalSpeed != 0){
+			animator.SetBool("Walk", true);
+		}
+		else{
+			animator.SetBool("Walk", false);
+		}
+		
     }
 }
+
+
+
+
+
+
+
+
+
+
